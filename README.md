@@ -1,6 +1,6 @@
 # Object_detection_ResNet_for_COCO_imageset
 
-The purpose of this code is to detect objects of interest in the COCO images by assigning boxes to each object. The images containing objects of interest are downloaded from the COCO database "https://cocodataset.org/#download" via the file "COCO_image_downloader.ipynb" and are saved in different files for training and testing.
+The purpose of this code is to detect objects of interest in the COCO images by assigning boxes to each object. The images containing objects of interest are downloaded from the COCO database "https://cocodataset.org/#download" via the file "COCO_image_downloader.ipynb" and are saved in different folders for training and testing.
 
 Two different networks are used in the file "Object_detection_training.ipynb" for object detection. The PyTorch DataLoader is used to load the images and the corresponding annotations in the file "instances_train2017.json".  The file "instances_train2017.json" can be downloaded from "https://cocodataset.org/#download". The first network is based on the ResNet structure, where the user can specify whether there should be a skipblock and is used for object classification. The second network is used for regression and predicts the coordinates of the boxes that enclose the object of interest.
 
